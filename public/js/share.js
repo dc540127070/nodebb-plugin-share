@@ -3,14 +3,14 @@
   $(window).on('action:share.addHandlers', function(evt,params) {
     addHandler('[component="share/qq"]', function () {
 		var result = getPostUrl($(this));
-      return params.openShare('http://connect.qq.com/widget/shareqq/index.html?title=' + result['title'] + '&url=',result['url'], 500, 570);
+      return params.openShare('http://connect.qq.com/widget/shareqq/index.html?' + result['title'] + '&url=',result['url'], 500, 570);
     });
   });  
 
   $(window).on('action:share.addHandlers', function(evt,params) {
     addHandler('[component="share/weibo"]', function () {
 		var result = getPostUrl($(this));
-      return params.openShare('http://service.weibo.com/share/share.php?&appkey=2428617074&ralateUid=3501446262&title=' + result['title'] + '&url=',result['url'], 500, 570);
+      return params.openShare('http://service.weibo.com/share/share.php?&appkey=2428617074&ralateUid=3501446262&' + result['title'] + '&url=',result['url'], 500, 570);
     });
   });  
 
