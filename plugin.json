@@ -1,0 +1,13 @@
+{
+	"id": "nodebb-plugin-share",
+	"name": "NodeBB Share",
+	"description": "",
+	"url": "",
+	"library": "./index.js",
+	"hooks": [
+		{ "hook": "filter:social.posts", "method": "addNetwork" }
+	],
+	"scripts": [
+      "public/js/share.js"
+ 	]
+}
