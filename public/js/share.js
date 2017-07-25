@@ -3,7 +3,7 @@
   $(window).on('action:share.addHandlers', function(evt,params) {
     addHandler('[component="share/qq"]', function () {
 		var result = getPostUrl($(this));
-      return params.openShare('http://connect.qq.com/widget/shareqq/index.html?' + result['title'] + '&url=',result['url'], 500, 570);
+      return params.openShare('http://connect.qq.com/widget/shareqq/index.html?summary=U77总有好游戏&' + result['title'] + '&url=',result['url'], 500, 570);
     });
   });  
 
